@@ -1,9 +1,9 @@
-# Initialize an empty dictionary: counts_dict
+#count number of times name of the country has appeared
+
 counts_dict = {}
 
 from generator_fnc import read_large_file
 
-# Open a connection to the file
 with open('world_dev_ind.csv') as file:
 
     # Iterate over the generator from read_large_file()

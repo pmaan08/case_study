@@ -12,7 +12,6 @@ def read_large_file(file_object):
         if not data:
             break
 
-        # Yield the line of data
         yield data
         
 # Open a connection to the file

@@ -1,19 +1,16 @@
-# Open a connection to the file
+#creating a dictionary of the data chunk
 with open('world_dev_ind.csv') as file:
 
-    # Skip the column names
     file.readline()
-
-    # Initialize an empty dictionary: counts_dict
     counts_dict = {}
 
     # Process only the first 1000 rows
     for j in range(0,1000):
 
-        # Split the current line into a list: line
+        # Split the current line into a list
         line = file.readline().split(',')
 
-        # Get the value for the first column: first_col
+        # Get the value for the first column
         first_col = line[0]
 
         # If the column value is in the dict, increment its value
